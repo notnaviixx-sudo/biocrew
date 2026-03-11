@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioEnergy | Food Waste & Anaerobic Digestion</title>
+    <style>
+        :root {
+            --navy: #1B2631;
+            --lavender-light: #E6E6FA;
+            --lavender-deep: #967BB6;
+            --accent: #DCD0FF;
+            --white: #FFFFFF;
+            --text-gray: #D1D1D1;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: var(--navy);
+            color: var(--lavender-light);
+        }
+
+        /* Header & Hero */
+        header {
+            background: linear-gradient(135deg, var(--navy) 60%, var(--lavender-deep) 100%);
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--lavender-deep);
+        }
+
+        h1 { font-size: 2.5rem; color: var(--white); margin-bottom: 10px; }
+        .subtitle { font-size: 1.2rem; color: var(--accent); max-width: 700px; margin: 0 auto; }
+
+        /* Content Sections */
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+
+        section { margin-bottom: 60px; padding: 30px; border-radius: 12px; background: rgba(255, 255, 255, 0.03); }
+
+        h2 { color: var(--lavender-deep); margin-bottom: 20px; border-left: 5px solid var(--lavender-deep); padding-left: 15px; }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .stat-card {
+            background: var(--lavender-light);
+            color: var(--navy);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .stat-card h3 { font-size: 1.8rem; margin-bottom: 5px; }
+
+        /* Solution Box */
+        .solution-box {
+            background: var(--lavender-deep);
+            color: var(--white);
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px 0;
+        }
+
+        ul { list-style: none; }
+        ul li::before { content: "• "; color: var(--lavender-deep); font-weight: bold; }
+        .solution-box ul li::before { color: var(--accent); }
+
+        footer { text-align: center; padding: 40px; font-size: 0.9rem; color: var(--text-gray); }
+
+        .highlight { color: var(--accent); font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Turning Waste into Value</h1>
+    <p class="subtitle">Researching the intersection of Food Loss and Anaerobic Digestion (AD) for a sustainable future.</p>
+</header>
+
+<div class="container">
+    
+    <section>
+        <h2>The Global & Local Crisis</h2>
+        <p>Food loss and waste represent a <span class="highlight">$1 trillion annual loss</span> globally. In Saudi Arabia alone, the impact is significant:</p>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>4M Tons</h3>
+                <p>Wasted Yearly in KSA</p>
+            </div>
+            <div class="stat-card">
+                <h3>184 kg</h3>
+                <p>Waste Per Person</p>
+            </div>
+            <div class="stat-card">
+                <h3>SR40B</h3>
+                <p>Annual Economic Cost</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Why It Matters</h2>
+        <p>When food enters landfills, it decomposes without oxygen, producing <span class="highlight">Methane</span>—a greenhouse gas 25–28x more potent than CO2. This process accelerates climate change and causes:</p>
+        <ul>
+            <li>Rising global temperatures (+1.1°C already recorded)</li>
+            <li>Soil and groundwater pollution</li>
+            <li>Loss of wasted energy, land, and water resources</li>
+        </ul>
+    </section>
+
+    <div class="solution-box">
+        <h2>Anaerobic Digestion (AD)</h2>
+        <p>Instead of pollution, AD creates a <span class="highlight">Circular Economy</span>. By breaking down organic waste in a controlled, oxygen-free environment, we capture methane rather than releasing it.</p>
+        <br>
+        <p><strong>The Result:</strong> Renewable Energy + Digestate.</p>
+    </div>
+
+    <section>
+        <h2>The Power of Digestate</h2>
+        <p>Digestate is the nutrient-rich material left after digestion, containing Nitrogen, Phosphorus, and Potassium. It serves as:</p>
+        <ul>
+            <li>Natural, organic fertilizer</li>
+            <li>Soil enhancer and compost</li>
+            <li>Animal bedding and bio-product raw material</li>
+        </ul>
+    </section>
+
+    <section style="text-align: center; border: none; background: none;">
+        <h2>Sustainability Goals</h2>
+        <p>AD reduces landfill dependency, improves soil health, and creates green jobs. It transforms a "waste problem" into a "resource solution."</p>
+    </section>
+
+</div>
+
+<footer>
+    &copy; 2026 Sustainable Research Initiative | Food Waste to Bioenergy
+</footer>
+
+</body>
+</html>
