@@ -36,9 +36,18 @@
         }
 
         .brand-logo { 
+            display: flex;
+            align-items: center;
             font-size: 1.6rem; font-weight: 900; color: var(--lavender); 
             letter-spacing: 2px; text-shadow: 0 0 10px rgba(183, 148, 244, 0.3);
             cursor: pointer;
+        }
+
+        .logo-icon {
+            height: 32px; /* Fixed height for the header */
+            width: auto;
+            margin-right: 10px; /* Space between logo and text */
+            filter: drop-shadow(0 0 5px rgba(183, 148, 244, 0.5));
         }
 
         .nav-links { display: flex; gap: 12px; align-items: center; }
@@ -104,12 +113,37 @@
             display: none; flex-direction: column; justify-content: center; align-items: center; z-index: 3000;
             text-align: center ;
         }
+
+        .overlay-logo-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .overlay-logo {
+            height: 80px; /* Larger logo for the overlay */
+            width: auto;
+            margin-right: 20px;
+            filter: drop-shadow(0 0 10px rgba(183, 148, 244, 0.6));
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            header { padding: 10px 5%; }
+            .brand-logo { font-size: 1.2rem; }
+            .logo-icon { height: 24px; margin-right: 8px; }
+            .overlay-logo { height: 40px; margin-right: 10px; }
+            .overlay-logo-container h1 { font-size: 2rem ! motherhood-size !important; }
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <div class="brand-logo" onclick="location.reload()">BIOCREW</div>
+    <div class="brand-logo" onclick="location.reload()">
+        <img src="https://uploads.onecompiler.io/44c64dm9x/44jmuh4w4/Gemini_Generated_Image_71ni0b71ni0b71ni.png" alt="BioCrew Logo" class="logo-icon">
+        BIOCREW
+    </div>
     <div class="nav-links">
         <button class="nav-btn" onclick="toggleTeam()">Team</button>
         <button class="nav-btn" onclick="document.getElementById('gallery-section').scrollIntoView({behavior: 'smooth'})">Gallery</button>
@@ -119,9 +153,12 @@
 </header>
 
 <div id="team-overlay">
-    <h1 style="color: var(--lavender); font-size: 3rem;">BIOCREW</h1>
+    <div class="overlay-logo-container">
+        <img src="https://uploads.onecompiler.io/44c64dm9x/44jmuh4w4/Gemini_Generated_Image_71ni0b71ni0b71ni.png" alt="BioCrew Logo" class="overlay-logo">
+        <h1 style="color: var(--lavender); font-size: 3rem; margin: 0;">BIOCREW</h1>
+    </div>
     <p style="opacity: 0.7; margin-bottom: 67px;"> This website is made by Team BioCrew from Amjad Qurtoba American Diploma as part of the international STEM BIEA competition 2026. </p>
-   <p>  Our project aims to convert food waste into biogas and fertilizers to promote a healthier and more sustainable world</p>
+   <p> Our project aims to convert food waste into biogas and fertilizers to promote a healthier and more sustainable world</p>
     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; max-width: 800px;">
         <span class="nav-btn">Nadine Fatani</span>
         <span class="nav-btn">Jana Kamal</span>
